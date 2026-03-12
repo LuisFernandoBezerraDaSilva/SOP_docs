@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Termos de Uso - Em Desenvolvimento</title>
+    <title>Termos de Uso - SOP</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -31,15 +31,42 @@
             color: #2c3e50;
             margin-bottom: 10px;
         }
-        .status-badge {
-            background-color: #f39c12;
-            color: white;
-            padding: 8px 20px;
-            border-radius: 20px;
-            display: inline-block;
-            font-size: 14px;
-            font-weight: bold;
-            margin-top: 10px;
+        h2 {
+            color: #2c3e50;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        h3 {
+            color: #34495e;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        h4 {
+            color: #34495e;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        ul {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .version-info {
+            background-color: #e8f4fd;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .contact-info {
+            background-color: #f0f9ff;
+            border: 1px solid #3498db;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 30px 0;
         }
         .content {
             margin: 30px 0;
@@ -77,50 +104,117 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>Termos de Uso</h1>
-            <div class="status-badge">EM DESENVOLVIMENTO</div>
+            <h1>TERMOS DE USO</h1>
+            <div class="version-info">
+                <strong>SOP (Sistema de Operações Pronta) — Chatbot WhatsApp</strong><br>
+                Versão 1.0 — 03 de março de 2026
+            </div>
         </div>
         
         <div class="content">
-            <div class="info-box">
-                <h3>📋 Status do Documento</h3>
-                <p>Este documento está atualmente em desenvolvimento e será publicado em breve. Estamos elaborando termos claros e transparentes para o uso de nossos serviços.</p>
-            </div>
-            
-            <div class="warning-box">
-                <h3>⚠️ Aviso Importante</h3>
-                <p>Até a publicação dos termos finais, o uso da aplicação deve ser considerado como em fase de testes e desenvolvimento. Os termos definitivos estabelecerão as condições completas de uso.</p>
-            </div>
-            
-            <div class="meta-info">
-                <h4>🔧 Informações Técnicas</h4>
-                <ul>
-                    <li><strong>Status:</strong> Em Desenvolvimento</li>
-                    <li><strong>Finalidade:</strong> Cumprimento de requisitos da Meta API</li>
-                    <li><strong>Última atualização:</strong> Março 2026</li>
-                    <li><strong>Tipo:</strong> Termos de Serviço</li>
-                </ul>
-            </div>
-            
-            <div class="info-box">
-                <h3>📞 Informações de Contato</h3>
-                <p>Para questões relacionadas aos termos de uso ou condições de serviço, entre em contato conosco através dos canais oficiais. Este documento será atualizado assim que finalizado.</p>
-            </div>
+            <h2>1. Apresentação</h2>
+            <p>Estes Termos de Uso ("Termos") regulam o acesso e a utilização do sistema SOP — Sistema de Operações Pronta — incluindo o módulo de Chatbot WhatsApp, desenvolvido e operado pela Pronta RH ("Empresa"), inscrita no CNPJ 37.412.074/0001-45.</p>
+            <p>Ao utilizar qualquer funcionalidade do SOP, o usuário ("Usuário") declara ter lido, compreendido e aceito integralmente os presentes Termos. Caso não concorde com qualquer disposição, o acesso deverá ser interrompido imediatamente.</p>
+            <p>O tratamento dos dados pessoais dos Usuários é regido pela Política de Privacidade do SOP, documento complementar e vinculado a estes Termos, disponível nos canais internos da Empresa. Ao utilizar o sistema, o Usuário declara também ter ciência do seu conteúdo.</p>
+            <p>O Usuário Final do Chatbot será informado sobre estes Termos mediante mensagem de boas-vindas no início de cada atendimento, nos termos do art. 7º, VIII, da Lei nº 12.965/2014 (Marco Civil da Internet).</p>
 
-            <div class="meta-info">
-                <h4>🌐 Para Desenvolvedores</h4>
-                <p>Esta página atende temporariamente aos requisitos de termos de uso da Meta API. O documento completo incluirá todas as cláusulas necessárias para o funcionamento do serviço.</p>
-            </div>
+            <h2>2. Definições</h2>
+            <p>Para fins destes Termos, aplicam-se as seguintes definições:</p>
+            <ul>
+                <li><strong>SOP:</strong> plataforma web e mobile de gestão operacional da Pronta RH, composta por frontend Angular, back-end Node.js/TypeScript e sistemas de chatbot integrados.</li>
+                <li><strong>Chatbot WhatsApp:</strong> módulo de atendimento automatizado via WhatsApp Business API (Meta), integrado ao Google Vertex AI (Gemini) para processamento de linguagem natural.</li>
+                <li><strong>Back-end:</strong> API REST em Node.js/TypeScript responsável por autenticação, gerenciamento de sessões e exposição de dados ao SOP.</li>
+                <li><strong>Usuário Operacional:</strong> colaborador interno da Pronta RH com acesso autenticado ao SOP.</li>
+                <li><strong>Usuário Final do Chatbot:</strong> pessoa física que interage com o Chatbot WhatsApp por meio do aplicativo WhatsApp.</li>
+                <li><strong>Dados de Conversa:</strong> mensagens, metadados e histórico gerados durante interações com o chatbot.</li>
+            </ul>
 
-            <div class="info-box">
-                <h3>🔗 Documentos Relacionados</h3>
-                <p>Consulte também nossa <a href="politica_de_privacidade.html">Política de Privacidade</a> (também em desenvolvimento) para informações sobre tratamento de dados.</p>
+            <h2>3. Acesso ao Sistema</h2>
+            
+            <h3>3.1 Credenciais</h3>
+            <p>O acesso ao SOP é restrito a Usuários Operacionais devidamente cadastrados. As credenciais (e-mail e senha) são de uso pessoal e intransferível. O Usuário é inteiramente responsável por toda atividade realizada sob suas credenciais.</p>
+            
+            <h3>3.2 Autenticação</h3>
+            <p>O sistema utiliza tokens JWT (JSON Web Token) com expiração configurada. O logout encerra a sessão ativa. A Empresa se reserva o direito de invalidar sessões por motivos de segurança sem aviso prévio.</p>
+            
+            <h3>3.3 Disponibilidade</h3>
+            <p>A Empresa envidará esforços razoáveis para manter o SOP disponível, mas não garante disponibilidade ininterrupta. Manutenções programadas ou não serão comunicadas quando possível. Os serviços de chatbot e back-end são independentes entre si, de modo que a indisponibilidade de um componente não implica necessariamente a indisponibilidade dos demais.</p>
+
+            <h2>4. Uso Permitido e Proibido</h2>
+            
+            <h3>4.1 Uso Permitido</h3>
+            <p>O SOP destina-se exclusivamente às atividades operacionais da Pronta RH, incluindo:</p>
+            <ul>
+                <li>Gestão de tarefas, projetos e fluxos internos.</li>
+                <li>Atendimento a candidatos e trabalhadores temporários via chatbot.</li>
+                <li>Consulta e administração de dados operacionais.</li>
+            </ul>
+            
+            <h3>4.2 Uso Proibido</h3>
+            <p>É expressamente vedado ao Usuário:</p>
+            <ul>
+                <li>Compartilhar credenciais de acesso com terceiros.</li>
+                <li>Utilizar o sistema para fins alheios às atividades da Pronta RH.</li>
+                <li>Tentar contornar mecanismos de autenticação, anti-spam ou quaisquer controles de segurança.</li>
+                <li>Realizar engenharia reversa, decompilação ou extração não autorizada de dados.</li>
+                <li>Inserir conteúdo malicioso, enganoso ou ilícito nas interações com o chatbot.</li>
+                <li>Sobrecarregar intencionalmente a infraestrutura do sistema (ataques de negação de serviço).</li>
+            </ul>
+
+            <h2>5. Chatbot WhatsApp — Condições Específicas</h2>
+            
+            <h3>5.1 Natureza do Serviço</h3>
+            <p>O Chatbot WhatsApp é um serviço de atendimento automatizado baseado em inteligência artificial. As respostas geradas pelo sistema têm caráter informativo e auxiliar, não substituindo orientação jurídica, trabalhista ou de RH prestada por profissional habilitado.</p>
+            
+            <h3>5.2 Janela de Atendimento</h3>
+            <p>O atendimento via WhatsApp Business API está sujeito à janela de 24 horas estabelecida pela Meta. Mensagens enviadas fora desse período somente poderão ser respondidas mediante uso de templates pré-aprovados, conforme políticas da plataforma.</p>
+            
+            <h3>5.3 Histórico de Conversa</h3>
+            <p>O histórico de conversas é armazenado em cache Redis por até 30 minutos para fins de continuidade contextual. Após esse período, o contexto é descartado. Registros persistentes são mantidos em banco de dados PostgreSQL conforme descrito na Política de Privacidade.</p>
+            
+            <h3>5.4 Limitações da IA</h3>
+            <p>As respostas geradas pelo Google Vertex AI (Gemini) podem conter imprecisões. A Empresa não se responsabiliza por decisões tomadas exclusivamente com base nas respostas do chatbot, salvo se o dano decorrer de falha comprovável do sistema imputável à Empresa. Em caso de dúvidas relevantes, o Usuário Final deve buscar confirmação com um representante humano da Pronta RH. Nos termos do art. 20 da LGPD, o Usuário Final tem direito de solicitar revisão de decisão tomada exclusivamente por meios automatizados, mediante requerimento ao DPO (dpo@pronta.srv.br).</p>
+            
+            <h3>5.5 Sistema Anti-Spam</h3>
+            <p>O sistema implementa mecanismos automáticos de detecção e bloqueio de comportamentos abusivos. Usuários identificados como spam poderão ter o acesso temporariamente suspenso sem notificação prévia.</p>
+
+            <h2>6. Propriedade Intelectual</h2>
+            <p>Todo o código-fonte, arquitetura, design, documentação e demais elementos do SOP são propriedade exclusiva da Pronta RH ou de seus licenciadores. Nenhuma disposição destes Termos transfere ao Usuário qualquer direito de propriedade intelectual sobre o sistema.</p>
+
+            <h2>7. Responsabilidades e Limitação de Responsabilidade</h2>
+            <p>A Empresa não será responsável por:</p>
+            <ul>
+                <li>Danos decorrentes do uso indevido das credenciais pelo próprio Usuário.</li>
+                <li>Indisponibilidade de serviços de terceiros (WhatsApp Business API/Meta, Google Vertex AI, Redis, PostgreSQL).</li>
+                <li>Decisões tomadas com base exclusiva nas respostas geradas pelo chatbot.</li>
+                <li>Perda de dados causada por falhas de infraestrutura fora do controle razoável da Empresa.</li>
+            </ul>
+            <p>A responsabilidade total da Empresa, em qualquer hipótese, limita-se ao valor equivalente a um mês de contrato de prestação de serviços entre as partes, quando aplicável. Esta limitação não se aplica, quando se tratar de: (i) relações de consumo, nas quais prevalece o Código de Defesa do Consumidor (Lei nº 8.078/1990); e de (ii) danos causados por dolo ou culpa grave da Empresa, desde que devidamente demonstrados e comprovados.</p>
+
+            <h2>8. Alterações nos Termos</h2>
+            <p>A Empresa reserva-se o direito de alterar estes Termos a qualquer momento. Alterações substanciais serão comunicadas com antecedência mínima de 15 (quinze) dias corridos. O uso continuado do sistema após a vigência das alterações implica aceitação das novas condições.</p>
+
+            <h2>9. Rescisão de Acesso</h2>
+            <p>A Empresa poderá suspender ou encerrar o acesso de qualquer Usuário, a qualquer momento, em caso de violação destes Termos, por determinação legal ou por necessidade operacional. O Usuário poderá solicitar o encerramento de seu acesso a qualquer tempo mediante comunicação formal ao departamento de TI.</p>
+
+            <h2>10. Disposições Gerais</h2>
+            
+            <h3>10.1 Lei Aplicável</h3>
+            <p>Estes Termos são regidos pelas leis da República Federativa do Brasil, em especial pela Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018 — LGPD), pelo Marco Civil da Internet (Lei nº 12.965/2014) e pela Consolidação das Leis do Trabalho (CLT) no que for aplicável.</p>
+            
+            <h3>10.2 Foro</h3>
+            <p>Fica eleito o foro da Comarca de Joinville, Estado de Santa Catarina, para dirimir quaisquer controvérsias oriundas destes Termos. Em relações de consumo, prevalece o foro do domicílio do titular, nos termos do art. 101, I, do Código de Defesa do Consumidor (Lei nº 8.078/1990).</p>
+            
+            <div class="contact-info">
+                <h3>10.3 Contato</h3>
+                <p>Dúvidas, solicitações e notificações relacionadas a estes Termos devem ser encaminhadas ao departamento de TI pelos canais internos do SOP. Solicitações relativas a dados pessoais e ao exercício de direitos previstos na LGPD devem ser direcionadas ao Encarregado (DPO) pelo e-mail público: <strong>dpo@pronta.srv.br</strong>, nos termos do art. 41, § 1º, da LGPD.</p>
             </div>
         </div>
         
         <div class="footer">
-            <p>Esta página foi criada para atender aos requisitos da Meta API.<br>
-            Os termos completos serão publicados em breve.</p>
+            <p>Termos de Uso - SOP (Sistema de Operações Pronta)<br>
+            Pronta RH - CNPJ 37.412.074/0001-45<br>
+            Última atualização: 03 de março de 2026</p>
         </div>
     </div>
 </body>

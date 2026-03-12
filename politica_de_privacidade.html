@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidade - Em Desenvolvimento</title>
+    <title>Política de Privacidade - SOP</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -31,24 +31,42 @@
             color: #2c3e50;
             margin-bottom: 10px;
         }
-        .status-badge {
-            background-color: #f39c12;
-            color: white;
-            padding: 8px 20px;
-            border-radius: 20px;
-            display: inline-block;
-            font-size: 14px;
-            font-weight: bold;
-            margin-top: 10px;
+        h2 {
+            color: #2c3e50;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
         }
-        .content {
-            margin: 30px 0;
+        h3 {
+            color: #34495e;
+            margin-top: 25px;
+            margin-bottom: 10px;
         }
-        .info-box {
+        h4 {
+            color: #34495e;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        ul {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .version-info {
             background-color: #e8f4fd;
             border-left: 4px solid #3498db;
-            padding: 20px;
+            padding: 15px;
             margin: 20px 0;
+        }
+        .contact-info {
+            background-color: #f0f9ff;
+            border: 1px solid #3498db;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 30px 0;
         }
         .footer {
             text-align: center;
@@ -70,40 +88,121 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>Política de Privacidade</h1>
-            <div class="status-badge">EM DESENVOLVIMENTO</div>
+            <h1>POLÍTICA DE PRIVACIDADE</h1>
+            <div class="version-info">
+                <strong>SOP (Sistema de Operações Pronta) — Chatbot WhatsApp</strong><br>
+                Versão 1.0 — 03 de março de 2026
+            </div>
         </div>
         
         <div class="content">
-            <div class="info-box">
-                <h3>📋 Status do Documento</h3>
-                <p>Este documento está atualmente em desenvolvimento e será publicado em breve. Estamos trabalhando para garantir total conformidade com as regulamentações de privacidade e proteção de dados.</p>
-            </div>
-            
-            <div class="meta-info">
-                <h4>🔧 Informações Técnicas</h4>
-                <ul>
-                    <li><strong>Status:</strong> Em Desenvolvimento</li>
-                    <li><strong>Finalidade:</strong> Cumprimento de requisitos da Meta API</li>
-                    <li><strong>Última atualização:</strong> Março 2026</li>
-                    <li><strong>Conformidade:</strong> LGPD, GDPR</li>
-                </ul>
-            </div>
-            
-            <div class="info-box">
-                <h3>📞 Informações de Contato</h3>
-                <p>Para questões relacionadas à privacidade de dados, entre em contato conosco através dos canais oficiais. Este documento será atualizado assim que finalizado.</p>
-            </div>
+            <h2>1. Controlador dos Dados</h2>
+            <p>A Pronta RH, CNPJ 37.412.074/0001-45, responsável pelo desenvolvimento e operação do SOP (Sistema de Operações Pronta), atua como Controladora dos dados pessoais tratados no âmbito desta Política, nos termos da Lei Geral de Proteção de Dados Pessoais (LGPD — Lei nº 13.709/2018).</p>
+            <p>O Encarregado pelo Tratamento de Dados Pessoais (DPO) é Paulo Roberto da Silva, podendo ser contactado pelo e-mail: dpo@pronta.srv.br. As informações do DPO são divulgadas publicamente nos termos do art. 41, § 1º, da LGPD.</p>
 
-            <div class="meta-info">
-                <h4>🌐 Para Desenvolvedores</h4>
-                <p>Esta página atende temporariamente aos requisitos de política de privacidade da Meta API. O documento completo será implementado seguindo as melhores práticas de proteção de dados.</p>
+            <h2>2. Dados Coletados</h2>
+            
+            <h3>2.1 Usuários Operacionais do SOP</h3>
+            <p>Para os colaboradores com acesso ao painel administrativo do SOP, são coletados:</p>
+            <ul>
+                <li>Nome completo e endereço de e-mail institucional.</li>
+                <li>Hash da senha (armazenada com criptografia avançada— nunca em texto puro).</li>
+                <li>Logs de acesso: endereço IP, horário de login/logout e ações realizadas.</li>
+                <li>Tokens de sessão, com expiração configurada.</li>
+            </ul>
+
+            <h3>2.2 Usuários Finais do Chatbot WhatsApp</h3>
+            <p>Para pessoas que interagem com o Chatbot WhatsApp da Pronta RH, são coletados:</p>
+            <ul>
+                <li>Número de telefone (identificador da conta WhatsApp).</li>
+                <li>Conteúdo das mensagens enviadas ao chatbot.</li>
+                <li>Metadados da mensagem: horário, tipo de mensagem, status de entrega.</li>
+                <li>Registros persistentes de interações armazenados em banco de dados PostgreSQL.</li>
+            </ul>
+            <p>Não são coletados intencionalmente dados sensíveis (saúde, biometria, etc.). Caso o Usuário Final os forneça espontaneamente, o tratamento somente ocorrerá mediante consentimento específico e destacado do titular (art. 11, I, LGPD); ausente o consentimento, os dados serão descartados imediatamente.</p>
+
+            <h2>3. Finalidade do Tratamento</h2>
+            <p>Os dados pessoais são tratados para as seguintes finalidades:</p>
+            <ul>
+                <li>Autenticação e controle de acesso ao SOP.</li>
+                <li>Prestação do serviço de atendimento automatizado via chatbot.</li>
+                <li>Manutenção de contexto conversacional durante a sessão de atendimento.</li>
+                <li>Monitoramento de uso, detecção de comportamentos abusivos (anti-spam) e segurança do sistema.</li>
+                <li>Cumprimento de obrigações legais e regulatórias, incluindo legislação trabalhista.</li>
+                <li>Melhoria contínua dos modelos de resposta e da qualidade do atendimento.</li>
+            </ul>
+            <p>O tratamento é fundamentado nas bases legais do art. 7º da LGPD: execução de contrato (inciso V) para autenticação e prestação do serviço de chatbot; cumprimento de obrigação legal (inciso II) para retenção de registros trabalhistas e fiscais; legítimo interesse (inciso IX) para monitoramento anti-spam, segurança do sistema e melhoria dos modelos de resposta — após avaliação de proporcionalidade nos termos do art. 10, § 1º (LIA disponível mediante solicitação ao DPO); e consentimento (inciso I) quando exigível pela natureza do tratamento.</p>
+
+            <h2>4. Compartilhamento de Dados com Terceiros</h2>
+            <p>O sistema SOP integra-se a serviços de terceiros que, na qualidade de Operadores ou subcontratados, podem processar dados pessoais:</p>
+            <ul>
+                <li><strong>Google Cloud / Vertex AI (Gemini):</strong> processamento das mensagens para geração de respostas pela IA. Os dados são transmitidos para os servidores do Google conforme os Termos de Serviço do Google Cloud e o Adendo de Processamento de Dados aplicável.</li>
+                <li><strong>Meta / WhatsApp Business API:</strong> transmissão e recebimento de mensagens via infraestrutura da Meta Platforms, sujeita à Política de Dados da Meta.</li>
+                <li><strong>Provedores de infraestrutura (servidores, PostgreSQL, Redis):</strong> hospedagem e armazenamento dos dados conforme contratos de processamento vigentes.</li>
+            </ul>
+            <p>A Empresa não vende, aluga nem comercializa dados pessoais de Usuários a terceiros para fins publicitários.</p>
+            <p>Dados poderão ser compartilhados com autoridades públicas quando exigido por lei, ordem judicial ou solicitação de autoridade competente.</p>
+
+            <h2>5. Transferência Internacional de Dados</h2>
+            <p>O Google Vertex AI é configurado para processar dados exclusivamente em território brasileiro, utilizando a região southamerica-east1 (São Paulo). Os dados não são transferidos para servidores localizados fora do Brasil, nem utilizados para treinamento de modelos pelo Google. A configuração adotada inclui modo de privacidade ativo, logs desabilitados e retenção mínima de dados, afastando a incidência dos arts. 33 a 35 da LGPD para este tratamento.</p>
+
+            <h2>6. Retenção e Exclusão dos Dados</h2>
+            <p>Os prazos de retenção aplicados são:</p>
+            <ul>
+                <li><strong>Registros de conversa persistentes em PostgreSQL:</strong> retidos por 12 (doze) meses após o encerramento do atendimento, salvo obrigação legal que exija prazo superior.</li>
+                <li><strong>Logs de acesso de Usuários Operacionais:</strong> retidos por até 10 (dez) anos para fins de auditoria.</li>
+                <li><strong>Dados de autenticação (hash de senha, tokens):</strong> excluídos imediatamente após o encerramento da conta.</li>
+            </ul>
+            <p>Após o período de retenção, os dados são excluídos de forma segura ou anonimizados.</p>
+
+            <h2>7. Segurança dos Dados</h2>
+            <p>A Empresa adota medidas técnicas e organizacionais para proteger os dados pessoais contra acesso não autorizado, perda, alteração ou divulgação indevida, incluindo:</p>
+            <ul>
+                <li>Armazenamento de senhas com hash (nunca em texto puro).</li>
+                <li>Autenticação baseada em tokens com expiração.</li>
+                <li>Comunicação via HTTPS (TLS) em todos os endpoints públicos.</li>
+                <li>Separação de serviços: falha em um componente não compromete os demais.</li>
+                <li>Controle de acesso por perfil de usuário.</li>
+            </ul>
+            <p>Apesar das medidas adotadas, nenhum sistema é absolutamente invulnerável. Em caso de incidente de segurança que possa acarretar risco ou dano relevante aos titulares, a Empresa notificará a Autoridade Nacional de Proteção de Dados (ANPD) e os titulares afetados nos prazos legais.</p>
+
+            <h2>8. Direitos dos Titulares</h2>
+            <p>Nos termos da LGPD (art. 18), os titulares de dados pessoais têm direito a:</p>
+            <ul>
+                <li>Confirmação da existência do tratamento.</li>
+                <li>Acesso aos dados.</li>
+                <li>Correção de dados incompletos, inexatos ou desatualizados.</li>
+                <li>Anonimização, bloqueio ou eliminação de dados desnecessários, excessivos ou tratados em desconformidade com a LGPD.</li>
+                <li>Portabilidade dos dados a outro fornecedor de serviço ou produto.</li>
+                <li>Eliminação dos dados tratados com base no consentimento.</li>
+                <li>Informação sobre compartilhamento com terceiros.</li>
+                <li>Revogação do consentimento.</li>
+                <li>Petição à Autoridade Nacional de Proteção de Dados (ANPD), nos termos do art. 18, § 1º, da LGPD, pelo canal: www.gov.br/anpd.</li>
+            </ul>
+            <p>Para exercer estes direitos, o titular deve encaminhar solicitação formal ao DPO da Empresa pelos canais internos. A solicitação será atendida no prazo de 15 (quinze) dias, prorrogável justificadamente.</p>
+
+            <h2>9. Cookies e Tecnologias de Rastreamento</h2>
+            <p>O SOP (frontend) pode utilizar armazenamento local (localStorage/sessionStorage) exclusivamente para manutenção de sessão e preferências de interface. Não são utilizados cookies de rastreamento publicitário ou de terceiros para fins de marketing.</p>
+
+            <h2>10. Dados de Menores</h2>
+            <p>O SOP e o Chatbot WhatsApp não são direcionados a menores de 18 anos. Caso a Empresa identifique que dados de menores foram coletados sem o consentimento adequado do responsável legal, tais dados serão imediatamente excluídos.</p>
+
+            <h2>11. Alterações nesta Política</h2>
+            <p>Esta Política poderá ser atualizada periodicamente para refletir mudanças no sistema, na legislação ou nas práticas de privacidade da Empresa. A versão vigente sempre estará disponível nos canais internos do SOP. Alterações substanciais serão comunicadas com antecedência mínima de 15 (quinze) dias.</p>
+
+            <h2>12. Lei Aplicável e Foro</h2>
+            <p>Esta Política é regida pela legislação brasileira, em especial pela LGPD (Lei nº 13.709/2018). Fica eleito o foro da Comarca de Joinville, Estado de Santa Catarina, para dirimir quaisquer controvérsias oriundas desta Política. Em relações de consumo, prevalece o foro do domicílio do titular, nos termos do art. 101, I, do Código de Defesa do Consumidor (Lei nº 8.078/1990).</p>
+
+            <div class="contact-info">
+                <h2>13. Contato — Encarregado (DPO)</h2>
+                <p>Solicitações relacionadas a esta Política de Privacidade e ao exercício de direitos dos titulares devem ser encaminhadas ao Encarregado pelo Tratamento de Dados Pessoais da Pronta RH pelo e-mail: <strong>dpo@pronta.srv.br</strong>. O canal é público e acessível a qualquer titular, conforme exigência do art. 41, § 1º, da LGPD.</p>
             </div>
         </div>
         
         <div class="footer">
-            <p>Esta página foi criada para atender aos requisitos da Meta API.<br>
-            O documento final será publicado em breve.</p>
+            <p>Política de Privacidade - SOP (Sistema de Operações Pronta)<br>
+            Pronta RH - CNPJ 37.412.074/0001-45<br>
+            Última atualização: 03 de março de 2026</p>
         </div>
     </div>
 </body>
